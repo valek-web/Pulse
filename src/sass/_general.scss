@@ -1,17 +1,90 @@
 .container {
-  max-width: 1440px;
+  max-width: 940px;
   margin: 0 auto;
+  position: relative;
 }
 
 .promo {
-  background: url(../img/bg_promo.jpg);
+  background: url(../img/bg_promo.jpg) center center/ cover no-repeat;
+  padding: 24px 0 93px 0;
+  &__wrapper {
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__header {
+    font-family: $font700;
+    font-size: 42px;
+  }
+  &__subheader {
+    margin-top: 17px;
+    font-family: $font500;
+    font-size: 24px;
+  }
+  &__icons {
+    display: flex;
+    max-width: 470px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 66px;
+  }
+  &__icon {
+    text-align: center;
+    font-family: $font500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 42px;
+      height: 46px;
+      margin-bottom: 20px;
+    }
+  }
+  .button {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 68px;
+  }
+  &__catalog {
+    font-family: $font500;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: lowercase;
+    margin-top: 18px;
+    text-align: right;
+    a {
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
+
+.button {
+  display: block;
+  background-color: #c70101;
+  border: none;
+  border-radius: 5px;
+  font-family: $font500;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.6s all;
+  &:hover {
+    background-color: #9b0000;
+  }
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 24px 0 93px 0;
   text-align: center;
   &__logo {
     width: 251px;
@@ -24,7 +97,7 @@
     }
   }
   &__official {
-    font-family: 'Museo Sans 500 Medium';
+    font-family: $font500;
     color: #ffffff;
     span {
       font-size: 18px;
@@ -37,26 +110,15 @@
     font-weight: 500;
   }
   .button {
-    display: block;
     width: 150px;
     height: 30px;
-    background-color: #c70101;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Museo Sans 500 Medium';
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
-    cursor: pointer;
     margin-top: 10px;
-    transition: 0.6s all;
-    &:hover {
-      background-color: #9b0000;
-    }
+    font-size: 12px;
   }
+
   &__contact {
     a {
-      font-family: 'Museo Sans 700 Bold';
+      font-family: $font700;
       text-decoration: none;
       font-size: 18px;
       color: #ffffff;
