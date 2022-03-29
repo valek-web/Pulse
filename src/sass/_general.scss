@@ -125,3 +125,48 @@
     }
   }
 }
+
+.benefits {
+  background-color: #f6f6f6;
+  padding: 70px 0 95px 0;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+  }
+  &__item {
+    max-width: 240px;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 70px;
+      height: 70px;
+    }
+    h3 {
+      font-family: $font700;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #0d0d0d;
+      margin-top: 38px;
+    }
+  }
+  &__desc {
+    font-family: $font300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #0d0d0d;
+    margin-top: 26px;
+    a {
+      color: #ff0000;
+    }
+  }
+}
+
+.label {
+  font-family: $font700;
+  font-size: 30px;
+  color: #0d0d0d;
+}
