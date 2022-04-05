@@ -1,0 +1,28 @@
+.carousel {
+  padding: 81px 0 82px 0;
+  &__slider {
+    margin: 0 auto;
+    div {
+      height: 580px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .next {
+    right: -66px;
+  }
+  .prev {
+    left: -66px;
+  }
+}

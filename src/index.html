@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Document</title>
@@ -29,7 +33,7 @@
             <span>Garmin, Polar, Suunto</span>
           </div>
           <div class="header__contact">
-            <a href="tel:+7 (499) 922-89-74">+7 (499) 922-89-74</a>
+            <a href="tel:+7(499)922-89-74">+7 (499) 922-89-74</a>
             <button class="button">заказать звонок</button>
           </div>
         </header>
@@ -97,13 +101,30 @@
         <div class="consultation__descr">
           Просто заполните форму заявки и мы перезвоним вам в течении 10 минут
         </div>
-        <form class="consultation__form">
-          <input type="text" name="firstname" placeholder="Ваше имя" />
-          <input type="tel" name="phone" placeholder="Ваш телефон" />
-          <input type="email" name="email" placeholder="Ваш E-mail" />
+        <form class="form">
+          <input required type="text" name="firstname" placeholder="Ваше имя" />
+          <input required type="tel" name="phone" placeholder="Ваш телефон" />
+          <input required type="email" name="email" placeholder="Ваш E-mail" />
           <button class="button">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
     </section>
+    <section class="carousel">
+      <div class="container">
+        <div class="carousel__slider">
+          <div><img src="./img/carousel_item_1.jpg" alt="1" /></div>
+          <div><img src="./img/carousel_item_2.jpg" alt="2" /></div>
+          <div><img src="./img/carousel_item_3.jpg" alt="3" /></div>
+        </div>
+        <button class="next carousel__button">
+          <img src="./img/left.png" alt="left" />
+        </button>
+        <button class="prev carousel__button">
+          <img src="./img/right.png" alt="right" />
+        </button>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module" src="./js/scripr.js"></script>
   </body>
 </html>
