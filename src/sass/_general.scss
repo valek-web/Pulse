@@ -22,9 +22,12 @@
   font-family: $font700;
   font-size: 30px;
   color: #0d0d0d;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @import './promo';
 @import './benefits';
 @import './consultation';
 @import './carousel';
+@import './catalog';

@@ -1,0 +1,106 @@
+.catalog {
+  padding-bottom: 103px;
+  &__tabs {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 69px;
+  }
+  &__tab {
+    width: 220px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6b6b6b;
+    font-family: $font500;
+    line-height: 50px;
+    text-align: center;
+    transform: skewX(-20deg);
+    margin: 0 6px;
+    transition: 0.7s all;
+    div {
+      transform: skewX(20deg);
+    }
+    &:hover {
+      transform: translateY(-5px) translateX(2px) skewX(-20deg);
+      cursor: pointer;
+    }
+    &_active {
+      background-color: $red_normal;
+      color: #ffffff;
+      border: none;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 60px;
+  }
+  &-item {
+    min-height: 440px;
+    border: 2px solid #e8e8e8;
+    text-align: center;
+    padding: 20px 20px 27px 20px;
+    &__img {
+      max-width: 100%;
+      height: 200px;
+    }
+    &__title {
+      font-family: $font700;
+      font-size: 16px;
+      color: #0d0d0d;
+      margin-top: 20px;
+    }
+    &__descr {
+      font-family: $font300;
+      font-size: 14px;
+      color: #0d0d0d;
+      margin-top: 16px;
+    }
+    &__link {
+      display: inline-block;
+      font-family: $font500;
+      font-size: 14px;
+      color: #c70101;
+      margin-top: 17px;
+    }
+    &__footer {
+      margin-top: 19px;
+      &::before {
+        display: block;
+        content: '';
+        width: 260px;
+        height: 1px;
+        background-color: #e8e8e8;
+        margin-bottom: 21px;
+      }
+      .button {
+        width: 131px;
+        height: 40px;
+      }
+      &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &__prices {
+      text-align: left;
+    }
+    &__old-price {
+      font-family: $font300;
+      font-size: 14px;
+      color: #555555;
+      text-decoration: line-through;
+    }
+    &__price {
+      font-family: $font700;
+      font-size: 20px;
+      color: #050505;
+    }
+  }
+}
