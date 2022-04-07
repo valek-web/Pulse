@@ -21,6 +21,7 @@
     transform: skewX(-20deg);
     margin: 0 6px;
     transition: 0.7s all;
+    user-select: none;
     div {
       transform: skewX(20deg);
     }
@@ -63,6 +64,7 @@
       margin-right: 20px;
       &-active {
         transform: translateX(0%);
+        margin-right: 40px;
       }
     }
     &__list {
