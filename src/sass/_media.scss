@@ -17,6 +17,9 @@
     &__wrapper {
       justify-content: space-around;
     }
+    &__item {
+      max-width: 210px;
+    }
   }
 
   .consultation {
@@ -25,7 +28,12 @@
 
   .carousel {
     &__wrapper {
-      width: 800px;
+      width: 80%;
+    }
+    &__slider {
+      div {
+        height: 500px;
+      }
     }
     .next {
       right: 30px;
@@ -39,13 +47,28 @@
     &__content {
       padding: 30px;
     }
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .reviews {
     padding: 0 30px 71px 30px;
+    .review {
+      &__info {
+        max-width: 520px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 769px) {
+  .promo {
+    .header {
+      &__official {
+        display: none;
+      }
+    }
+  }
   .benefits {
     &__item {
       max-width: 100%;
@@ -69,20 +92,142 @@
 
   .carousel {
     &__wrapper {
-      width: 600px;
+      width: 75%;
+    }
+    &__slider {
+      div {
+        height: 350px;
+      }
     }
   }
 
   .catalog {
+    padding-bottom: 53px;
+    &__tab {
+      width: 150px;
+    }
     &__content {
-      grid-template-columns: repeat(2, 1fr);
+      padding: 13px;
+      grid-gap: 7px;
+      margin-top: 20px;
     }
   }
   .reviews {
     .review {
+      &__wrapper {
+        display: block;
+      }
+      &__img {
+        margin: 0 auto;
+      }
       &__info {
-        max-width: 500px;
+        text-align: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .promo {
+    .header {
+      display: block;
+      &__logo {
+        width: 100%;
+      }
+      &__contact {
+        margin-top: 23px;
+        .button {
+          width: 60%;
+          height: 40px;
+          margin: 10px auto;
+        }
+      }
+    }
+    &__wrapper {
+      margin-top: 40px;
+    }
+    &__header {
+      font-size: 35px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+    &__icons {
+      margin-top: 30px;
+    }
+    &__icon {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+    .button {
+      margin-top: 30px;
+    }
+  }
+  .benefits {
+    padding: 30px;
+    &__item {
+      max-width: 100%;
+      width: 100%;
+      margin-top: 30px;
+    }
+    &__wrapper {
+      display: block;
+    }
+  }
+  .consultation {
+    &__header {
+      font-size: 25px;
+    }
+    &__descr {
+      margin-top: 38px;
+    }
+  }
+  .carousel {
+    display: none;
+  }
+  .catalog {
+    padding: 30px 0 43px 0px;
+    &__tabs {
+      margin-top: 35px;
+    }
+    &__tab {
+      width: 95px;
+      font-size: 14px;
+    }
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .reviews {
+    .review {
+      &__wrapper {
+        display: block;
+      }
+      &__img {
+        margin: 0 auto;
+      }
+      &__info {
+        text-align: center;
+      }
+      &__name {
+        margin-top: 20px;
+      }
+      &__text {
+        text-align: justify;
+      }
+      &:nth-child(1) {
+        margin-top: 30px;
+      }
+    }
+  }
+  footer {
+    .address {
+      width: 100%;
+    }
+  }
+
+  .label {
+    font-size: 25px;
   }
 }
