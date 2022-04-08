@@ -2,19 +2,19 @@
   padding-bottom: 71px;
   .review {
     margin-top: 50px;
-    // &:nth-child(1) {
-    //   margin-top: 70px;
-    // }
-    // & {
-    //   &::before {
-    //     content: '';
-    //     display: block;
-    //     width: 940px;
-    //     height: 1px;
-    //     background-color: #f6f6f6;
-    //     margin-bottom: 53px;
-    //   }
-    // }
+    &:nth-child(1) {
+      margin-top: 70px;
+    }
+    &:not(:nth-child(1)) {
+      &::before {
+        content: '';
+        display: block;
+        width: 940px;
+        height: 1px;
+        background-color: #f6f6f6;
+        margin-bottom: 53px;
+      }
+    }
     &__wrapper {
       display: flex;
       justify-content: space-between;
