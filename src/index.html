@@ -21,6 +21,8 @@
       src="https://kit.fontawesome.com/5da4ab2654.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module" src="./js/scripr.js"></script>
     <title>Pulse</title>
   </head>
   <body>
@@ -115,11 +117,14 @@
     </section>
     <section class="carousel">
       <div class="container">
-        <div class="carousel__slider">
-          <div><img src="./img/carousel_item_1.jpg" alt="1" /></div>
-          <div><img src="./img/carousel_item_2.jpg" alt="2" /></div>
-          <div><img src="./img/carousel_item_3.jpg" alt="3" /></div>
+        <div class="carousel__wrapper">
+          <div class="carousel__slider">
+            <div><img src="./img/carousel_item_1.jpg" alt="1" /></div>
+            <div><img src="./img/carousel_item_2.jpg" alt="2" /></div>
+            <div><img src="./img/carousel_item_3.jpg" alt="3" /></div>
+          </div>
         </div>
+
         <button class="next carousel__button">
           <img src="./img/left.png" alt="left" />
         </button>
@@ -936,7 +941,5 @@
         </ul>
       </address>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script type="module" src="./js/scripr.js"></script>
   </body>
 </html>

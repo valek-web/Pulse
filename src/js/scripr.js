@@ -5,13 +5,14 @@ const catalog_content = document.querySelectorAll('.catalog-item__content')
 const catalog_list = document.querySelectorAll('.catalog-item__list')
 const catalog_end = document.querySelectorAll('.end')
 
-console.log(catalog_list, catalog_content, catalog_links)
-
 const slider = tns({
   container: '.carousel__slider',
   items: 1,
   nav: false,
   controls: false,
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplayButtonOutput: false,
 })
 
 document.querySelector('.prev').addEventListener('click', () => {

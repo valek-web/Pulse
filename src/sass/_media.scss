@@ -1,0 +1,88 @@
+@media screen and (max-width: 993px) {
+  .promo {
+    padding: 25px;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__icons {
+      justify-content: space-around;
+    }
+    .header {
+      justify-content: space-around;
+    }
+  }
+
+  .benefits {
+    &__wrapper {
+      justify-content: space-around;
+    }
+  }
+
+  .consultation {
+    padding: 40px;
+  }
+
+  .carousel {
+    &__wrapper {
+      width: 800px;
+    }
+    .next {
+      right: 30px;
+    }
+    .prev {
+      left: 30px;
+    }
+  }
+
+  .catalog {
+    &__content {
+      padding: 30px;
+    }
+  }
+  .reviews {
+    padding: 0 30px 71px 30px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .benefits {
+    &__item {
+      max-width: 100%;
+      width: 40%;
+      margin-top: 30px;
+    }
+    &__wrapper {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+  }
+
+  .consultation {
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .carousel {
+    &__wrapper {
+      width: 600px;
+    }
+  }
+
+  .catalog {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .reviews {
+    .review {
+      &__info {
+        max-width: 500px;
+      }
+    }
+  }
+}

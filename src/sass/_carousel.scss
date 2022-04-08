@@ -1,5 +1,8 @@
 .carousel {
   padding: 81px 0 82px 0;
+  &__wrapper {
+    margin: 0 auto;
+  }
   &__slider {
     margin: 0 auto;
     div {
