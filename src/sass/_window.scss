@@ -1,0 +1,88 @@
+.window {
+  display: none;
+  position: fixed;
+  text-align: center;
+  padding: 38px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 380px;
+  min-height: 400px;
+  background-color: #f2f2f2;
+  transition: 1s all;
+  .form {
+    margin-top: 25px;
+    input {
+      width: 100%;
+      height: 50px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-family: $font300;
+      font-size: 14px;
+      line-height: 50px;
+      color: #4b4b4b;
+      padding: 20px;
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+      &:focus {
+        outline: none;
+        transform: translateX(10px);
+      }
+    }
+    .button {
+      width: 100%;
+      height: 55px;
+      background-color: #c70101;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+  &_buy_active {
+    display: block;
+  }
+  &_consultation_active {
+    display: block;
+  }
+}
+
+.header_window {
+  font-family: $font700;
+  font-size: 19px;
+  color: #0d0d0d;
+}
+.subheader_window {
+  font-family: $font500;
+  font-size: 14px;
+  color: #0d0d0d;
+  margin-top: 11px;
+}
+.xmark {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  color: $red_normal;
+  cursor: pointer;
+  i {
+    font-size: 21px;
+  }
+}
+
+.thank {
+  display: none;
+  position: fixed;
+  text-align: center;
+  width: 380px;
+  height: 140px;
+  background-color: #f2f2f2;
+  padding: 38px 78px 40px 76px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  &_active {
+    display: block;
+  }
+}
