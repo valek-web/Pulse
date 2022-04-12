@@ -230,4 +230,22 @@
   .label {
     font-size: 25px;
   }
+
+  .window {
+    width: 100%;
+  }
+
+  .thank {
+    width: 100%;
+    padding: 38px 58px 40px 56px;
+  }
+
+  .xmark {
+    top: 10px;
+    right: 10px;
+    padding: 3px;
+    i {
+      font-size: 26px;
+    }
+  }
 }
