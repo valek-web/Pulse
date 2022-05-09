@@ -1,12 +1,15 @@
 .background {
-  display: none;
+  z-index: -3;
+  opacity: 0;
   position: fixed;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   left: 0;
   width: 100%;
   height: 100vh;
+  transition: 0.2s all;
   &_active {
-    display: block;
+    z-index: 3;
+    opacity: 1;
   }
 }
